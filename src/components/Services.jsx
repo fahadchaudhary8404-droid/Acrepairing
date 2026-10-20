@@ -10,82 +10,82 @@ import {
 const categories = [
   {
     id: 'ac',
-    title: 'Air Conditioner',
+    title: 'مكيف الهواء',
     emoji: '❄️',
     color: 'from-blue-500 to-cyan-500',
     bg: 'bg-blue-50',
     border: 'border-blue-200',
     textColor: 'text-blue-600',
-    desc: 'All types of AC repair, installation & maintenance',
+    desc: 'إصلاح وتركيب وصيانة جميع أنواع المكيفات',
     services: [
-      { icon: Wind, name: 'Split AC Repair', desc: 'All brands & models' },
-      { icon: Building2, name: 'Central AC Repair', desc: 'Commercial & residential' },
-      { icon: Square, name: 'Window AC Repair', desc: 'Fast turnaround' },
-      { icon: Wrench, name: 'AC Installation', desc: 'Homes & offices' },
-      { icon: Settings, name: 'AC Maintenance', desc: 'Regular servicing' },
-      { icon: Droplets, name: 'Gas Refilling', desc: 'All refrigerant types' },
-      { icon: Sparkles, name: 'AC Deep Cleaning', desc: 'Fresh & hygienic air' },
-      { icon: AlertTriangle, name: 'Emergency Repair', desc: '24/7 availability' },
+      { icon: Wind, name: 'إصلاح مكيف سبليت', desc: 'جميع الماركات والموديلات' },
+      { icon: Building2, name: 'إصلاح المكيف المركزي', desc: 'تجاري وسكني' },
+      { icon: Square, name: 'إصلاح مكيف شباك', desc: 'خدمة سريعة' },
+      { icon: Wrench, name: 'تركيب مكيفات', desc: 'منازل ومكاتب' },
+      { icon: Settings, name: 'صيانة مكيفات', desc: 'صيانة دورية' },
+      { icon: Droplets, name: 'تعبئة غاز', desc: 'جميع أنواع الغاز' },
+      { icon: Sparkles, name: 'تنظيف مكيفات', desc: 'تنظيف عميق وشامل' },
+      { icon: AlertTriangle, name: 'إصلاح طارئ', desc: 'متاح 24/7' },
     ],
   },
   {
     id: 'fridge',
-    title: 'Refrigerator',
+    title: 'الثلاجة',
     emoji: '🧊',
     color: 'from-teal-500 to-green-500',
     bg: 'bg-teal-50',
     border: 'border-teal-200',
     textColor: 'text-teal-600',
-    desc: 'Complete fridge & freezer repair services',
+    desc: 'خدمات إصلاح شاملة للثلاجات والمجمدات',
     services: [
-      { icon: Thermometer, name: 'Cooling Problem Fix', desc: 'Not cooling? We fix it' },
-      { icon: Droplet, name: 'Water Leakage Repair', desc: 'Stop leaks fast' },
-      { icon: Zap, name: 'Compressor Repair', desc: 'All compressor types' },
-      { icon: Settings, name: 'Thermostat Replacement', desc: 'Accurate temperature' },
-      { icon: RefrigeratorIcon, name: 'Door Seal Repair', desc: 'Prevent cold air loss' },
-      { icon: Sparkles, name: 'Fridge Cleaning', desc: 'Hygienic deep clean' },
-      { icon: Box, name: 'Deep Freezer Repair', desc: 'Commercial & domestic' },
-      { icon: Wrench, name: 'Ice Maker Repair', desc: 'All models serviced' },
+      { icon: Thermometer, name: 'إصلاح مشكلة التبريد', desc: 'لا تبرد؟ نحلها' },
+      { icon: Droplet, name: 'إصلاح تسرب الماء', desc: 'إيقاف التسرب بسرعة' },
+      { icon: Zap, name: 'إصلاح الكمبروسر', desc: 'جميع أنواع الكمبروسر' },
+      { icon: Settings, name: 'استبدال الترموستات', desc: 'ضبط دقيق للحرارة' },
+      { icon: RefrigeratorIcon, name: 'إصلاح جوانة الباب', desc: 'منع تسرب الهواء البارد' },
+      { icon: Sparkles, name: 'تنظيف الثلاجة', desc: 'تنظيف عميق وصحي' },
+      { icon: Box, name: 'إصلاح الفريزر', desc: 'تجاري ومنزلي' },
+      { icon: Wrench, name: 'إصلاح صانع الثلج', desc: 'جميع الموديلات' },
     ],
   },
   {
     id: 'washing',
-    title: 'Washing Machine',
+    title: 'الغسالة',
     emoji: '🫧',
     color: 'from-violet-500 to-purple-600',
     bg: 'bg-violet-50',
     border: 'border-violet-200',
     textColor: 'text-violet-600',
-    desc: 'Top load, front load & all brand repairs',
+    desc: 'إصلاح غسالات علوية وأمامية وجميع الماركات',
     services: [
-      { icon: WashingMachine, name: 'Drum Repair', desc: 'Noise & vibration fix' },
-      { icon: Droplet, name: 'Water Leakage Fix', desc: 'Seal & hose repair' },
-      { icon: Zap, name: 'Motor Repair', desc: 'All motor types' },
-      { icon: Settings, name: 'Control Board Repair', desc: 'Electronic faults' },
-      { icon: Wrench, name: 'Spin Problem Fix', desc: 'Top & front load' },
-      { icon: Droplets, name: 'Drainage Problem', desc: 'Pump & pipe fix' },
-      { icon: Sparkles, name: 'Machine Cleaning', desc: 'Drum deep clean' },
-      { icon: AlertTriangle, name: 'Error Code Fix', desc: 'All error codes' },
+      { icon: WashingMachine, name: 'إصلاح الحوض', desc: 'إصلاح الضوضاء والاهتزاز' },
+      { icon: Droplet, name: 'إصلاح تسرب الماء', desc: 'إصلاح الأختام والخراطيم' },
+      { icon: Zap, name: 'إصلاح الموتور', desc: 'جميع أنواع الموتور' },
+      { icon: Settings, name: 'إصلاح لوحة التحكم', desc: 'الأعطال الإلكترونية' },
+      { icon: Wrench, name: 'إصلاح مشكلة الدوران', desc: 'علوية وأمامية' },
+      { icon: Droplets, name: 'مشكلة التصريف', desc: 'إصلاح المضخة والأنابيب' },
+      { icon: Sparkles, name: 'تنظيف الغسالة', desc: 'تنظيف عميق للحوض' },
+      { icon: AlertTriangle, name: 'إصلاح رموز الخطأ', desc: 'جميع رموز الخطأ' },
     ],
   },
   {
     id: 'other',
-    title: 'Other Appliances',
+    title: 'أجهزة أخرى',
     emoji: '🔧',
     color: 'from-orange-500 to-amber-500',
     bg: 'bg-orange-50',
     border: 'border-orange-200',
     textColor: 'text-orange-600',
-    desc: 'Microwave, oven, dishwasher & more',
+    desc: 'ميكروويف، فرن، غسالة أطباق والمزيد',
     services: [
-      { icon: Microwave, name: 'Microwave Repair', desc: 'Quick & affordable' },
-      { icon: Flame, name: 'Oven Repair', desc: 'Gas & electric ovens' },
-      { icon: Utensils, name: 'Dishwasher Repair', desc: 'All brands' },
-      { icon: Droplet, name: 'Water Dispenser', desc: 'Repair & maintenance' },
-      { icon: Zap, name: 'Electric Stove Repair', desc: 'Burner & heating fix' },
-      { icon: Wind, name: 'Exhaust Fan Repair', desc: 'Kitchen & bathroom' },
-      { icon: Settings, name: 'Vacuum Cleaner', desc: 'Motor & suction fix' },
-      { icon: Wrench, name: 'Water Heater Repair', desc: 'Gas & electric' },
+      { icon: Microwave, name: 'إصلاح ميكروويف', desc: 'سريع وبأسعار مناسبة' },
+      { icon: Flame, name: 'إصلاح فرن', desc: 'أفران غاز وكهرباء' },
+      { icon: Utensils, name: 'إصلاح غسالة أطباق', desc: 'جميع الماركات' },
+      { icon: Droplet, name: 'براد مياه', desc: 'إصلاح وصيانة' },
+      { icon: Zap, name: 'إصلاح بوتاجاز كهربائي', desc: 'إصلاح الشعلات والتسخين' },
+      { icon: Wind, name: 'إصلاح شفاط هواء', desc: 'مطبخ وحمام' },
+      { icon: Settings, name: 'مكنسة كهربائية', desc: 'إصلاح الموتور والشفط' },
+      { icon: Wrench, name: 'إصلاح سخان مياه', desc: 'غاز وكهرباء' },
     ],
   },
 ]
@@ -103,26 +103,20 @@ function CategoryCard({ cat, index }) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className={`bg-white rounded-3xl border-2 ${open ? cat.border : 'border-slate-100'} shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden`}
     >
-      {/* Card header */}
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left p-6 flex items-center gap-4"
+        className="w-full text-right p-6 flex items-center gap-4"
       >
-        {/* Icon */}
         <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${cat.color} flex items-center justify-center text-3xl shadow-lg shrink-0`}>
           {cat.emoji}
         </div>
-
-        {/* Text */}
         <div className="flex-1 min-w-0">
           <h3 className="text-xl font-extrabold text-[#1E293B]">{cat.title}</h3>
           <p className="text-slate-500 text-sm mt-0.5">{cat.desc}</p>
           <span className={`inline-block mt-2 text-xs font-semibold ${cat.textColor} ${cat.bg} px-2.5 py-1 rounded-full`}>
-            {cat.services.length} Services
+            {cat.services.length} خدمات
           </span>
         </div>
-
-        {/* Chevron */}
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
@@ -132,7 +126,6 @@ function CategoryCard({ cat, index }) {
         </motion.div>
       </button>
 
-      {/* Expanded services */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -158,7 +151,7 @@ function CategoryCard({ cat, index }) {
                 href="#contact"
                 className={`inline-flex items-center gap-2 bg-gradient-to-r ${cat.color} text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow hover:scale-105 transition-transform`}
               >
-                Book This Service <ArrowRight className="w-4 h-4" />
+                احجز هذه الخدمة <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </motion.div>
@@ -183,16 +176,16 @@ export default function Services() {
           className="text-center mb-12"
         >
           <div className="inline-flex items-center gap-2 bg-blue-50 text-[#0F4C81] px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            Our Services
+            خدماتنا
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-3">
-            Complete Appliance{' '}
+            حلول إصلاح{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F4C81] to-[#14B8A6]">
-              Repair Solutions
+              شاملة للأجهزة
             </span>
           </h2>
           <p className="text-slate-500 max-w-xl mx-auto">
-            Tap any category to see all available services
+            اضغط على أي فئة لعرض جميع الخدمات المتاحة
           </p>
         </motion.div>
 

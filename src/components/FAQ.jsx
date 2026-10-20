@@ -4,28 +4,28 @@ import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'How much does AC repair cost?',
-    a: 'AC repair costs vary depending on the issue and the type of unit. Basic repairs start from SAR 150, while complex repairs may cost more. We provide a free inspection and upfront quote before any work begins — no hidden charges.',
+    q: 'كم تكلفة إصلاح المكيف؟',
+    a: 'تتفاوت تكلفة إصلاح المكيف حسب المشكلة ونوع الجهاز. تبدأ الإصلاحات البسيطة من 150 ريال، بينما قد تكون الإصلاحات المعقدة أعلى. نقدم فحصاً مجانياً وعرضاً واضحاً للسعر قبل البدء بأي عمل — بدون رسوم خفية.',
   },
   {
-    q: 'Do you provide emergency service?',
-    a: 'Yes! We offer 24/7 emergency repair service across all major Saudi cities. Call or WhatsApp us anytime and a technician will be dispatched to your location within 2 hours.',
+    q: 'هل تقدمون خدمة طارئة؟',
+    a: 'نعم! نقدم خدمة إصلاح طارئة على مدار الساعة 24/7 في جميع أحياء الرياض. اتصل بنا أو راسلنا على واتساب في أي وقت وسيصل الفني إلى موقعك خلال ساعتين.',
   },
   {
-    q: 'How long does a repair typically take?',
-    a: 'Most standard repairs are completed within 1–3 hours. Complex issues or repairs requiring special parts may take 24–48 hours. We always keep you informed of the timeline.',
+    q: 'كم يستغرق الإصلاح عادةً؟',
+    a: 'تُنجز معظم الإصلاحات القياسية في مدة تتراوح بين ساعة و3 ساعات. المشاكل المعقدة أو التي تتطلب قطع غيار خاصة قد تحتاج من 24 إلى 48 ساعة. نحرص دائماً على إبلاغك بالوقت المتوقع.',
   },
   {
-    q: 'Do you use original spare parts?',
-    a: 'Absolutely. We only use genuine, manufacturer-approved spare parts for all repairs. This ensures the longevity of the repair and maintains your appliance warranty.',
+    q: 'هل تستخدمون قطع غيار أصلية؟',
+    a: 'بالتأكيد. نستخدم فقط قطع الغيار الأصلية والمعتمدة من الشركة المصنعة في جميع الإصلاحات. هذا يضمن طول عمر الإصلاح والحفاظ على ضمان جهازك.',
   },
   {
-    q: 'Do you provide a warranty on repairs?',
-    a: 'Yes, all our repair services come with a 90-day warranty on both labor and parts. If the same issue recurs within the warranty period, we fix it at no additional charge.',
+    q: 'هل تقدمون ضماناً على الإصلاحات؟',
+    a: 'نعم، جميع خدمات الإصلاح لدينا تأتي بضمان 90 يومًا على العمالة وقطع الغيار. إذا تكررت نفس المشكلة خلال فترة الضمان، نصلحها دون أي تكلفة إضافية.',
   },
   {
-    q: 'Which cities do you cover in Saudi Arabia?',
-    a: 'We currently serve Riyadh, Jeddah, Dammam, Al Khobar, Makkah, Madinah, Taif, and many other cities. We are continuously expanding our coverage across the Kingdom.',
+    q: 'ما هي المناطق التي تخدمونها في الرياض؟',
+    a: 'نخدم جميع أحياء الرياض بما فيها: العليا، الملز، الروضة، الورود، النخيل، الياسمين، النزهة، السليمانية، المربع وجميع الأحياء الأخرى.',
   },
 ]
 
@@ -42,10 +42,10 @@ function FAQItem({ faq, index }) {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between p-5 md:p-6 text-left bg-white hover:bg-gray-50 transition-colors"
+        className="w-full flex items-center justify-between p-5 md:p-6 text-right bg-white hover:bg-gray-50 transition-colors"
         aria-expanded={open}
       >
-        <span className="font-semibold text-[#1E293B] pr-4">{faq.q}</span>
+        <span className="font-semibold text-[#1E293B] pl-4">{faq.q}</span>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}
@@ -65,7 +65,7 @@ function FAQItem({ faq, index }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
           >
-            <div className="px-5 md:px-6 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4 bg-blue-50/30">
+            <div className="px-5 md:px-6 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4 bg-blue-50/30 text-right">
               {faq.a}
             </div>
           </motion.div>
@@ -91,14 +91,14 @@ export default function FAQ() {
         >
           <div className="inline-flex items-center gap-2 bg-blue-50 text-[#0F4C81] px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <HelpCircle className="w-4 h-4" />
-            FAQ
+            الأسئلة الشائعة
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-4">
-            Frequently Asked{' '}
-            <span className="text-[#0F4C81]">Questions</span>
+            الأسئلة{' '}
+            <span className="text-[#0F4C81]">المتكررة</span>
           </h2>
           <p className="text-gray-500 text-lg">
-            Got questions? We've got answers.
+            لديك سؤال؟ لدينا الإجابة.
           </p>
         </motion.div>
 

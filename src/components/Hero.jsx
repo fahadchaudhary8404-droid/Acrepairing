@@ -3,10 +3,10 @@ import { Phone, MessageCircle, CheckCircle, Users, Clock, ThumbsUp } from 'lucid
 import heroImage from '../assets/ChatGPT Image Jul 23, 2026, 11_36_07 PM.png'
 
 const stats = [
-  { icon: Users, value: '1000+', label: 'Happy Customers' },
-  { icon: CheckCircle, value: '10+', label: 'Years Experience' },
-  { icon: Clock, value: '24/7', label: 'Support' },
-  { icon: ThumbsUp, value: '100%', label: 'Satisfaction' },
+  { icon: Users, value: '+1000', label: 'عميل سعيد' },
+  { icon: CheckCircle, value: '+10', label: 'سنوات خبرة' },
+  { icon: Clock, value: '24/7', label: 'دعم مستمر' },
+  { icon: ThumbsUp, value: '100%', label: 'رضا تام' },
 ]
 
 export default function Hero() {
@@ -15,17 +15,13 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Full background image */}
       <img
         src={heroImage}
-        alt="Hero Background"
+        alt="خلفية الصفحة الرئيسية"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
+      <div className="absolute inset-0 bg-black/50" />
 
-      {/* Dark overlay so text is readable */}
-      {/* <div className="absolute inset-0 bg-[#0F4C81]/70" /> */}
-
-      {/* Subtle animated blobs */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-[#14B8A6]/20 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#2563EB]/20 rounded-full blur-3xl" />
 
@@ -38,31 +34,31 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6"
           >
             <span className="w-2 h-2 bg-[#14B8A6] rounded-full animate-pulse" />
-            Available 24/7 — Saudi Arabia
+            متاح 24/7 — المملكة العربية السعودية
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-1xl sm:text-5xl lg:text-6xl xl:text-5xl font-extrabold text-white leading-tight mb-6"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight mb-5"
           >
-            Professional AC &{' '}
+            خدمات احترافية لإصلاح{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#14B8A6] to-[#60a5fa]">
-              Fridge Repair
+              المكيفات والثلاجات
             </span>
             <br />
-            Services in Saudi Arabia
+            في المملكة العربية السعودية
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg sm:text-xl font-[20px]  text-blue-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-sm text-blue-100 max-w-xl mx-auto mb-8 leading-relaxed"
           >
-            Fast, Reliable and Affordable Home Appliance Repair Services.
-            Certified technicians at your doorstep.
+            خدمات إصلاح الأجهزة المنزلية بسرعة وموثوقية وأسعار معقولة.
+            فنيون معتمدون يصلون إلى باب منزلك.
           </motion.p>
 
           <motion.div
@@ -73,23 +69,22 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#14B8A6] to-[#2563EB] text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#14B8A6] to-[#2563EB] text-white px-6 py-3 rounded-2xl font-semibold text-sm shadow-2xl hover:scale-105 transition-all"
             >
               <Phone className="w-5 h-5" />
-              Book Service
+              احجز الخدمة
             </a>
             <a
-              href="https://wa.me/966581829201?text=Hello%2C%20I%20need%20AC%20%26%20Fridge%20repair%20service"
+              href="https://wa.me/966581829201?text=مرحباً%2C%20أحتاج%20إلى%20خدمة%20إصلاح%20مكيف%20أو%20ثلاجة"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/20 hover:scale-105 transition-all"
+              className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-6 py-2.5 rounded-2xl font-semibold text-sm hover:bg-white/20 hover:scale-105 transition-all"
             >
               <MessageCircle className="w-5 h-5 text-green-400" />
-              WhatsApp Now
+              واتساب الآن
             </a>
           </motion.div>
 
-          {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -110,7 +105,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Wave */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8FAFC" />

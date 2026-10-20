@@ -1,18 +1,16 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import {
-  Award, Clock, DollarSign, Zap, Shield, Star, Wrench, HeadphonesIcon
-} from 'lucide-react'
+import { Award, Clock, DollarSign, Zap, Shield, Star, Wrench, HeadphonesIcon } from 'lucide-react'
 
 const reasons = [
-  { icon: Award, title: 'Certified Experts', desc: 'All technicians are certified and trained for all major appliance brands.', color: 'text-blue-600', bg: 'bg-blue-50' },
-  { icon: Clock, title: '24/7 Emergency', desc: 'Round-the-clock emergency repair service, 365 days a year.', color: 'text-red-500', bg: 'bg-red-50' },
-  { icon: DollarSign, title: 'Affordable Pricing', desc: 'Transparent, upfront pricing with no hidden fees or surprise charges.', color: 'text-green-600', bg: 'bg-green-50' },
-  { icon: Zap, title: 'Quick Response', desc: 'Same-day service available. We arrive within 2 hours of your call.', color: 'text-amber-500', bg: 'bg-amber-50' },
-  { icon: Shield, title: 'Warranty Included', desc: '90-day warranty on all repair work and spare parts used.', color: 'text-purple-600', bg: 'bg-purple-50' },
-  { icon: Star, title: 'Trusted Company', desc: 'Over 1000 satisfied customers with a 4.9-star average rating.', color: 'text-yellow-500', bg: 'bg-yellow-50' },
-  { icon: Wrench, title: 'Pro Equipment', desc: 'Using the latest professional diagnostic and repair tools.', color: 'text-indigo-600', bg: 'bg-indigo-50' },
-  { icon: HeadphonesIcon, title: 'Customer Support', desc: 'Dedicated support team ready to assist via phone, WhatsApp, or email.', color: 'text-teal-600', bg: 'bg-teal-50' },
+  { icon: Award, title: 'فنيون معتمدون', desc: 'جميع الفنيين معتمدون ومدربون على جميع ماركات الأجهزة الكبرى.', color: 'text-blue-600', bg: 'bg-blue-50' },
+  { icon: Clock, title: 'طوارئ 24/7', desc: 'خدمة إصلاح طارئة على مدار الساعة، 365 يومًا في السنة.', color: 'text-red-500', bg: 'bg-red-50' },
+  { icon: DollarSign, title: 'أسعار معقولة', desc: 'أسعار شفافة ومحددة مسبقًا بدون رسوم خفية أو مفاجآت.', color: 'text-green-600', bg: 'bg-green-50' },
+  { icon: Zap, title: 'استجابة سريعة', desc: 'خدمة في نفس اليوم. نصل إلى موقعك خلال ساعتين من اتصالك.', color: 'text-amber-500', bg: 'bg-amber-50' },
+  { icon: Shield, title: 'ضمان شامل', desc: 'ضمان 90 يومًا على جميع أعمال الإصلاح وقطع الغيار المستخدمة.', color: 'text-purple-600', bg: 'bg-purple-50' },
+  { icon: Star, title: 'شركة موثوقة', desc: 'أكثر من 1000 عميل راضٍ بمتوسط تقييم 4.9 نجمة.', color: 'text-yellow-500', bg: 'bg-yellow-50' },
+  { icon: Wrench, title: 'معدات احترافية', desc: 'نستخدم أحدث أدوات التشخيص والإصلاح الاحترافية.', color: 'text-indigo-600', bg: 'bg-indigo-50' },
+  { icon: HeadphonesIcon, title: 'دعم العملاء', desc: 'فريق دعم متخصص جاهز للمساعدة عبر الهاتف أو واتساب أو البريد الإلكتروني.', color: 'text-teal-600', bg: 'bg-teal-50' },
 ]
 
 export default function WhyChooseUs() {
@@ -30,14 +28,14 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 bg-blue-50 text-[#0F4C81] px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            Why Choose Us
+            لماذا تختارنا
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mb-4">
-            The CoolFix Pro{' '}
-            <span className="text-[#0F4C81]">Advantage</span>
+            مميزات{' '}
+            <span className="text-[#0F4C81]">CoolFix Pro</span>
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            We don't just fix appliances — we build long-term trust with every customer we serve.
+            نحن لا نصلح الأجهزة فحسب بل نبني ثقة دائمة مع كل عميل نخدمه.
           </p>
         </motion.div>
 

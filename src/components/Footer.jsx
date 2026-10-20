@@ -1,20 +1,20 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
-import logo from '../assets/WhatsApp Image 2026-08-01 at 8.44.14 PM.png'
+import logo from '/logo.png'
 
 const services = [
-  'Split AC Repair', 'Central AC Repair', 'AC Installation',
-  'AC Maintenance', 'Gas Refilling', 'Refrigerator Repair',
-  'Washing Machine', 'Emergency Repair',
+  'إصلاح مكيف سبليت', 'إصلاح مكيف مركزي', 'تركيب مكيفات',
+  'صيانة مكيفات', 'تعبئة غاز', 'إصلاح ثلاجة',
+  'إصلاح غسالة', 'إصلاح طارئ',
 ]
 
 const quickLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Why Choose Us', href: '#why-us' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'الرئيسية', href: '#home' },
+  { label: 'من نحن', href: '#about' },
+  { label: 'خدماتنا', href: '#services' },
+  { label: 'لماذا نحن', href: '#why-us' },
+  { label: 'آراء العملاء', href: '#testimonials' },
+  { label: 'تواصل معنا', href: '#contact' },
 ]
 
 const socials = [
@@ -32,18 +32,15 @@ export default function Footer() {
           {/* Company */}
           <div>
             <div className="flex items-center mb-5">
-              <img src={logo} alt="CoolFix Pro" className="h-14 w-auto object-contain" />
+              <img src={logo} alt="التبريد وتكييف الرياض" className="h-16 w-auto object-contain" />
             </div>
             <p className="text-sm leading-relaxed mb-5">
-              Saudi Arabia's most trusted AC & home appliance repair company. Certified technicians,
-              original parts, 90-day warranty.
+              الشركة الأكثر ثقةً في المملكة العربية السعودية لإصلاح المكيفات والأجهزة المنزلية. فنيون معتمدون، قطع غيار أصلية، ضمان 90 يوماً.
             </p>
             <div className="flex gap-3">
               {socials.map(({ icon: Icon, href, label }) => (
                 <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
+                  key={label} href={href} aria-label={label}
                   className="w-9 h-9 bg-white/5 hover:bg-[#0F4C81] rounded-xl flex items-center justify-center transition-colors border border-white/10"
                 >
                   <Icon className="w-4 h-4 text-gray-400 hover:text-white transition-colors" />
@@ -54,7 +51,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-bold mb-5 text-base">Our Services</h4>
+            <h4 className="text-white font-bold mb-5 text-base">خدماتنا</h4>
             <ul className="space-y-2.5">
               {services.map((s) => (
                 <li key={s}>
@@ -69,7 +66,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-5 text-base">Quick Links</h4>
+            <h4 className="text-white font-bold mb-5 text-base">روابط سريعة</h4>
             <ul className="space-y-2.5">
               {quickLinks.map(({ label, href }) => (
                 <li key={label}>
@@ -84,30 +81,39 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-bold mb-5 text-base">Contact Info</h4>
+            <h4 className="text-white font-bold mb-5 text-base">معلومات التواصل</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#14B8A6] mt-0.5 shrink-0" />
                 <div>
-                  <a href="tel:+966500000000" className="text-sm text-white hover:text-[#14B8A6] transition-colors font-medium">
-                    +966 50 000 0000
+                  <a href="tel:+966581829201" className="text-sm text-white hover:text-[#14B8A6] transition-colors font-medium">
+                    966581829201+
                   </a>
-                  <div className="text-xs text-gray-500">24/7 Emergency Line</div>
+                  <div className="text-xs text-gray-500">خط الطوارئ 24/7</div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-[#14B8A6] mt-0.5 shrink-0" />
-                <a href="mailto:info@coolfix.sa" className="text-sm hover:text-[#14B8A6] transition-colors">
-                  info@coolfix.sa
+                <a href="mailto:summarhayat77@gmail.com" className="text-sm hover:text-[#14B8A6] transition-colors">
+                  summarhayat77@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#14B8A6] mt-0.5 shrink-0" />
-                <span className="text-sm">Riyadh, Saudi Arabia</span>
+                <a
+                  href="https://maps.google.com/?q=24.5796883,46.5557807"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-[#14B8A6] transition-colors leading-snug"
+                >
+                  التبريد وتكييف<br />
+                  بلال بن رباح، طويق<br />
+                  الرياض 14523
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="w-4 h-4 text-[#14B8A6] mt-0.5 shrink-0 text-base">🕐</span>
-                <span className="text-sm">Daily: 7AM – 11PM</span>
+                <span className="text-sm">يومياً: 7 صباحاً – 11 مساءً</span>
               </li>
             </ul>
           </div>
@@ -116,11 +122,11 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} CoolFix Pro. All rights reserved. Saudi Arabia.
+            © {new Date().getFullYear()} التبريد وتكييف الرياض. جميع الحقوق محفوظة.
           </p>
           <div className="flex gap-4 text-xs text-gray-500">
-            <a href="#" className="hover:text-[#14B8A6] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#14B8A6] transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-[#14B8A6] transition-colors">سياسة الخصوصية</a>
+            <a href="#" className="hover:text-[#14B8A6] transition-colors">شروط الخدمة</a>
           </div>
         </div>
       </div>

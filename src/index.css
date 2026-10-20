@@ -10,12 +10,15 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F8FAFC;
   color: #1E293B;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 /* Scroll progress bar */

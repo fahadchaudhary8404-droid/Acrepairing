@@ -3,17 +3,17 @@ import { useRef } from 'react'
 import { Award, DollarSign, Package, Zap, Shield, CheckCircle } from 'lucide-react'
 
 const features = [
-  { icon: Award, title: 'Certified Technicians', color: 'from-blue-500 to-blue-600' },
-  { icon: DollarSign, title: 'Affordable Prices', color: 'from-green-500 to-emerald-600' },
-  { icon: Package, title: 'Original Spare Parts', color: 'from-purple-500 to-violet-600' },
-  { icon: Zap, title: 'Fast Service', color: 'from-orange-500 to-amber-600' },
-  { icon: Shield, title: 'Warranty Provided', color: 'from-teal-500 to-cyan-600' },
+  { icon: Award, title: 'فنيون معتمدون', color: 'from-blue-500 to-blue-600' },
+  { icon: DollarSign, title: 'أسعار معقولة', color: 'from-green-500 to-emerald-600' },
+  { icon: Package, title: 'قطع غيار أصلية', color: 'from-purple-500 to-violet-600' },
+  { icon: Zap, title: 'خدمة سريعة', color: 'from-orange-500 to-amber-600' },
+  { icon: Shield, title: 'ضمان على الخدمة', color: 'from-teal-500 to-cyan-600' },
 ]
 
 const points = [
-  'Same-day service across Saudi Arabia',
-  'Transparent pricing — no hidden fees',
-  'Original parts with service warranty',
+  'خدمة في نفس اليوم في جميع أنحاء الرياض',
+  'أسعار شفافة — بدون رسوم خفية',
+  'قطع غيار أصلية مع ضمان الخدمة',
 ]
 
 function FadeIn({ children, delay = 0, direction = 'up' }) {
@@ -40,65 +40,63 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* LEFT — Image */}
+          {/* Image */}
           <FadeIn direction="left">
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="src/assets/images.png"
-                  alt="CoolFix Pro Technician"
+                  src="images.png"
+                  alt="فني CoolFix Pro"
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#0F4C81]/25 via-transparent to-transparent" />
               </div>
 
-              {/* Badge bottom-right */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-3 flex items-center gap-3 border border-slate-100"
+                className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl p-3 flex items-center gap-3 border border-slate-100"
               >
                 <div className="w-10 h-10 bg-gradient-to-br from-[#0F4C81] to-[#14B8A6] rounded-xl flex items-center justify-center">
                   <Award className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-bold text-[#0F4C81] text-sm">10+ Years</div>
-                  <div className="text-gray-400 text-xs">Trusted Service</div>
+                  <div className="font-bold text-[#0F4C81] text-sm">+10 سنوات</div>
+                  <div className="text-gray-400 text-xs">خدمة موثوقة</div>
                 </div>
               </motion.div>
 
-              {/* Live badge top-left */}
               <motion.div
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
-                className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 shadow"
+                className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5 flex items-center gap-2 shadow"
               >
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="text-xs font-semibold text-slate-700">Available Now</span>
+                <span className="text-xs font-semibold text-slate-700">متاح الآن</span>
               </motion.div>
             </div>
           </FadeIn>
 
-          {/* RIGHT — Content */}
+          {/* Content */}
           <div className="space-y-5">
             <FadeIn delay={0.1}>
               <span className="inline-flex items-center gap-2 bg-[#0F4C81]/8 text-[#0F4C81] px-4 py-1.5 rounded-full text-sm font-semibold">
-                About Us
+                من نحن
               </span>
             </FadeIn>
 
             <FadeIn delay={0.15}>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1E293B] leading-tight">
-                 شركة الإصلاح الموثوق{' '}
+                الشركة الأكثر{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0F4C81] to-[#14B8A6]">
-                أكثر في المملكة
-                </span>{' '} السعودية العربية 
+                  ثقةً وموثوقيةً
+                </span>{' '}في الرياض
               </h2>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-slate-500 leading-relaxed">
-                بأكثر من <span className="font-semibold text-[#0F4C81]"> 10 سنوات من الخبرة </span>, لقد بنت CoolFix Pro سمعةً راسخة في التميز بمجال إصلاح مكيفات الهواء والثلاجات والأجهزة المنزلية في جميع أنحاء المملكة العربية السعودية. نعتمد على فنيين معتمدين، ونستخدم قطع غيار أصلية، مع ضمان على جودة الخدمة والنتائج.
+                بخبرة تمتد لأكثر من <span className="font-semibold text-[#0F4C81]">10 سنوات</span>، بنت CoolFix Pro سمعةً راسخة في التميز في إصلاح المكيفات والثلاجات والأجهزة المنزلية في الرياض. نعتمد على فنيين معتمدين ونستخدم قطع غيار أصلية مع ضمان على جميع أعمال الإصلاح.
               </p>
             </FadeIn>
 
@@ -115,7 +113,6 @@ export default function About() {
               </ul>
             </FadeIn>
 
-            {/* Feature pills */}
             <FadeIn delay={0.3}>
               <div className="flex flex-wrap gap-2 pt-1">
                 {features.map(({ icon: Icon, title, color }) => (
@@ -129,13 +126,13 @@ export default function About() {
               </div>
             </FadeIn>
 
-            {/* <FadeIn delay={0.35}>
+            <FadeIn delay={0.35}>
               <a href="#contact"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0F4C81] to-[#14B8A6] text-white px-6 py-3 rounded-2xl font-bold text-sm shadow-lg hover:scale-105 transition-all"
               >
-                Get a Free Quote
+                احصل على عرض مجاني
               </a>
-            </FadeIn> */}
+            </FadeIn>
           </div>
 
         </div>

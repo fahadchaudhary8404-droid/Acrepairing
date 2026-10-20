@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Phone } from 'lucide-react'
-import logo from '../assets/WhatsApp Image 2026-08-01 at 8.44.14 PM.png'
+import logoImg from '/logo.png'
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'الرئيسية', href: '#home' },
+  { label: 'من نحن', href: '#about' },
+  { label: 'خدماتنا', href: '#services' },
+  { label: 'لماذا نحن', href: '#why-us' },
+  { label: 'آراء العملاء', href: '#testimonials' },
+  { label: 'تواصل معنا', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -32,11 +32,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <a href="#home" className="flex items-center group">
+          <a href="#home" className="flex items-center group hover:opacity-90 transition-opacity">
             <img
-              src={logo}
-              alt="CoolFix Pro"
-              className="h-12 w-auto object-contain group-hover:scale-105 transition-transform drop-shadow-lg"
+              src={logoImg}
+              alt="التبريد وتكييف الرياض"
+              className="h-14 lg:h-16 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300"
             />
           </a>
 
@@ -58,11 +58,11 @@ export default function Navbar() {
           {/* Call Now Button */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+966500000000"
+              href="tel:+966581829201"
               className="flex items-center gap-2 bg-gradient-to-r from-[#0F4C81] to-[#2563EB] text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
             >
               <Phone className="w-4 h-4" />
-              Call Now
+              +966581829201
             </a>
           </div>
 
@@ -99,11 +99,11 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="tel:+966500000000"
+                href="tel:+966581829201"
                 className="flex items-center gap-2 mt-3 bg-gradient-to-r from-[#0F4C81] to-[#2563EB] text-white px-5 py-3 rounded-xl text-sm font-semibold shadow-lg"
               >
                 <Phone className="w-4 h-4" />
-                Call Now: +966 50 000 0000
+                +966581829201
               </a>
             </div>
           </motion.div>
